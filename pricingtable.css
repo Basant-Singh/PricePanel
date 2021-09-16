@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+    color:#016ff9;
+
+}
+:root{
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+}
+#maincont{
+    background: #60a9ff;
+    
+}
+
+.panel{
+    border-radius: 0.7em;
+    width: 100%;
+    max-width: 1000px;
+    background: white;
+    padding: 1em;
+    
+}
+
+.pricing-plan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid #e1f1ff ;
+}
+.pricing-plan:last-child{
+    border-bottom: none;
+}
+.pricing-plan *{
+    padding: 1rem;
+    width: 100%;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.pricing-plan h2{
+    color: #888888;
+    font-weight: 600;
+    margin-bottom: .7em;
+}
+ul.pricing-features{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+li{
+    font-size: 0.75em;
+    font-weight: 600;
+    width: 100%;
+    border-bottom: 1px solid #e1f1ff;
+    /* line-height: .8em; */
+}
+li:first-of-type{
+    border-top: 1px solid #e1f1ff;
+
+}
+
+.pricing-img{
+    width: unset;
+    max-width: 100%;
+    padding-top: unset;
+}
+
+.pricing-price{
+    font-size: 2em;
+    font-weight: 700;
+    padding-top: unset ;
+}
+.pricing-button{
+    text-decoration: none;
+    border: 1px solid #9dd1ff;
+    border-radius: .7em;
+    padding: .8rem 2rem ;
+    width: unset;
+    transition: background-color .2s ease-in;
+    margin-bottom: 1.5rem;
+}
+.pricing-button:hover{
+    background: #e1f1ff;
+}
+.is-featured{
+    background: #60a9ff;
+    color: white;
+}
+.is-featured:hover{
+    background: #269aff;
+}
+@media (min-width: 900px){
+    .panel{
+        display: flex;
+        /* flex-direction: column; */
+        align-items: center;
+    }
+    #maincont{
+display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    }
+    .pricing-plan{
+        justify-content: center;
+        padding: 2em;
+        border-bottom: none;
+        border-left: 1px solid #e1f1ff;
+    }
+    .pricing-plan:first-of-type{
+        border-left: none;
+    }
+}
